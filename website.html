@@ -1,0 +1,606 @@
+<html>
+
+<head>
+    <title>
+        COLLEGE
+    </title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .about img:hover {
+            opacity: 0.6;
+            transform: scale(0.9);
+        }
+
+
+        .contact {
+            color: navy;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .back {
+            text-align: right;
+        }
+
+        .abc {
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+       
+        .navs a {
+            color: rgb(6, 6, 87);
+            font-size: 25px;
+            font-weight: bolder;
+
+
+        }
+
+        .navs a:hover {
+            color: rgb(95, 90, 90);
+            border-bottom: 3px solid rgb(95, 90, 90);
+
+        }
+
+        .bts {
+            color: rgb(6, 6, 68);
+            background: grey;
+            box-shadow: 7px 7px 9px grey;
+            text-align: center;
+            font-size: 45px;
+            font-family: serif;
+
+        }
+
+        .up {
+            font-weight: bolder;
+        }
+
+        .card {
+            text-align: center;
+            color: black;
+
+        }
+
+        .card:hover {
+          
+            border-bottom: 4px solid rgb(4, 4, 58);
+            border-top: 4px solid rgb(4, 4, 58);
+            border-left: 4px solid rgb(4, 4, 58);
+            border-right: 4px solid rgb(4, 4, 58);
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: bolder;
+            color:rgb(6, 6, 87);
+
+        }
+
+        .foot li:hover {
+            color: skyblue;
+
+        }
+
+        .rover li:hover {
+            color: skyblue;
+        }
+
+        .hash {
+            color: white;
+        }
+
+        .block {
+            background: grey;
+
+        }
+
+        .square {
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row p-3 block">
+            <div class="col-md-2 mt-3 up">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAC5VBMVEX///8AAADgHin///3//v8PfEL8///eAACS1+Hp9PbgHiYASqPM0Nb6/////v3cABHw4OEAADsAVawqKir51NQAAD7stLTfAAAYlFUAj1bvn6cUlV0AmVfELT/2+fkAdzvy+vXZICgfH10AkEqpvNa+1THjRUrh6+J0p4m3ITciekiptbuj2efA3uZuq9obG1w3M2fA3M3kHCCCncUAV6bZN0DiU1ieNVrkbSa7v84AibPyhosNKGtXutWKk54AJ059xKn/9CjiWjY+DRIAOADJ1uUhNXxfeC/5ex8PfaZwuJP/8B0JJHUmMH4Ak7DtkkHjZWnqkZaoHyGRjbNCbDuaGyEWQiPPLjFxMGBGoEdBUk/mTlZDbU9RZEr/5gDweyMAdKang3rRxCwAH4JaW4amSzlei7nbenne3t5bW1siFWfexhmlAACTAACXaWi3HyV1AAAAHEZUZ34tS2YAADFwhJUWO1vxvsHGaXGui5ysoKuQYXyoTW3STVXGp7Dj5MqUJlt/gV7X1SBzd52Ob3iGkFktRnfSwbmtiWOXRWUAlT7P2o/OX15iRiYcMCxeIiG1PiZumT+swUX/4kDqnQDwqTatRUeJkn9inXicu7eLtRhiXzMzoHJ1pjB2ciESFR/pwU3ruRrlkWD9+GDp8I611qChmybGgCX7/dCJfVf89GfBfELGxXXX7tTNn2K7sigtGxzo16wiCh6ryHAAUSQWh3eVSzQtcLVpTG5hi6Q9fzzYQQBmCxlzfnlymJgzfbt/rcdCJRlQHy0lKjYALgB6dgBhhayotp2Po2UAYnCkl1Zyb1p6TR9JTY+gJkVqc0v186smAAATLCvodGGlXGs8jJKzVSLLmB62RRyGsp5uoma+iCRfeBlzhXIAaV/nxoY7OBGIWj9RM2weWm4IgV/Q22VIpZnlkSYXFQDU6CVVlxsXKZKJZgATLiBWPzZ/XX6llgDSpYW7eF6RVVWWRESfi41SaYFXdUsHAAAZbklEQVR4nO2de0ATV77Hh0ycOGMyEyuGp0NGEZRIkdigVAPGKlYhLglCruKzogwIRoKA0hKrtrC7dXetD8S2tuvWFbXd6t612nWrsnfbuupivW7V2q5udd0+9t5u763av+/vnBkgqCRKkSR75yPJ5DV4vvzO+f3O7zwmBKGgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCg8DBQB7sADx0K3f0Ly6TQD6XTwUNdsMvS11BqfV3sxNVr6lc/7X1GsDTkl3oz14okScpmDWsoio905AscZ2YsGycmleY3cIbSOu7ZueuWrN++oS6SD2ONLKXW6SJjG/QyvHZNyeoNa57hvM/VC+Nznm8sa7Q7HA5DbFMyRajZ8GueaorQOyxmTtP5SiTjEgSXwPywfrHQ8KMfPQM/pcDEdT+OfmGvjgo3W1Lquo0/WWpmGOGnQ2R+Bk8ElUrY9OImZqNjIuCYCEZ0rPvx5i1bfuDQUwQZRoZUG5I0msMVHLS/iA6eUAkYlZnj8mO7WIcERkVpMgwsGexy3zfp67ZuM8QaELFaRLPT6XQzWCDTvP3KvJbJnSS27dixowCxQQx2ue8XuuUl2/qXu8W8YkYlw5gthetemPxKTEx0dAy6e7SLacEq8QPBEuk7bbZXI17zfZH8+a4Ofv7zXwjCygOv7/7lzFfiYmLi4nwVssEq9QOgJl/4yrYHWt0Q31fJ1222Xa3rbbv3rjUSPK+PXLPvqVzb7hdmgil5TFMTug8DhSS7P9f2MvIrQwy+vJ675Y3Fa0mKZWURau2bttxc2/5fzcQv8K1vBbPY94/aaPvqxZG2A19GRBzkfBDW23J/DXFd3dXxJom1u1/4pWxDim8SdXAIauHvC+PrLw0YkPLiV7l7Iv5d1QXjat269+7iq9Pjoru1w8RQr6Vq9jcjUhISEgYk7LStf7VDHfrnshiou0vPEvzMEd0UBqHQD8blASkpMS03Dh1qefnSNhUOEIJgNoPEWN29zaO+/PajyxCP7hj36KNtoW7D9ITpR49OP+woi3jNazFjgYxFVZpfrLLwPZ407QjieKvmnSP0b/uxsL3BmDBg+htvTL/GOY5FRNQXc5JCs97iyoj140MSjxz57Vu/YyZsb6NN/VfYXjEqYcDs2SlHD5vN+VkREbfzOUlhXUOxRe/nNDLx9ATV7976YNw0PrXfytor0kGg+d2DC6cwKnNSfUTEsYkcUigwGVyGv9SIJDO41uNHjpx4jJ7Rf6XtDS2gkJEUqswW708jyhyQPDXwapbX+Q101Np1J6ApjjMZU3turiEAmBAp/BIrVDGCd27EXIOZybiPKM4mImezrK2tLaQVtkgKJRuCRMYwN+K8V5VxH4UmWWTDttTUaaGsMBkEyjaUQ70Gu9SN0BVTBxw8TDxyAtuQ7o+i9pIdUw8dKrr1s4iI3//+CZn/KBmeNpYnKL4hMsDJLA2OBsz4WCinwPPfKyoqcqkKD3YOWkT8IQ0rJHihLtDZ5IlHBi2Dm7Y/ito7kqfORwoZM2g8f5dCQ6DT2bZBj2R9MGhQCCf52vdOzkMKLaDRIcd3eqis0FUa6HRy2qBlQ8qODMp82OXsPdunTkU2NMcyDBNVKuWAYnmHQksP/e4u6EE177/8waAQTi60RUXzUTuERGLpyXSJHZ0KuYBRgD6yzrb+2KDEkB1O5HdoT+J2yCxNiR8hc6NDoYUL2BDpk7m5ubZl40I2faKL3psK9dS19Gh8fHQ01hcf/0p5WvlwiHBqC9MQqGfD/xFxPIQVViMaq0+9HR0XFz0Z1dHFh2+NH3/69G5g27ZtawP8ApLGhG6fRrTnYPJOIYXp6KV8M7hVWy7ClmvbHeg3hKzxZPSjz44fffbs2dFn4rFCUQ8Koee2JbeDvcEu4vckMiMj1pJkNpuvxcXFxaSLf/qTiBSaj8mUHasJdhG/J7w+Uh/pMKvM16KRwqZ9PzyJFbbb7Xnt7Tnt7XlLQjjU3Q8sz+qNdbINo9PTr2xPlhRC2yyx2+1wy9OGelPzC70GqB9/9uwZrJAUk6V2aGEYyBShGwA3RxiMaPcMnWe354A/tV+N7/KlgMXcSZQj2IX8XvD/JvPch4C3rq4uMsMyfvz4Z8Z30rwmMzN0w11AqCSuy1pmjtNoOG71I74MattbUD48lDPcAKwehlHhdsegkRrz+EHdGAf9gpLyEE6P/MMm5uFejYDETViIhJpXT8NotfKR3Lt3b+bYgpDNHvzDaieBvrFjQaGwa8uCXQLYUEp7k0+mG/ED3rg/9xy5N6tRDEufShptiAXIeILNhobbZIXGy5clq/Hkbts5nT6f4xzhMBN6JySxPxcrBCZ88cUEFdTSjeO6kUka9651QG9cxQmGcNT4qzkIAc0Yoh9wOM2yi3lEuhtn1NVZOOSHVGbOEoYaybj4+PgYgenE/Mwjj2HkaDHu18UQUVSyr+UER9gFx6algAWR1NCwEQ4NUqR/OluieuW7ADKwgEf9ObMhlEe474ZiXQxnMSMDuSwrNuKeKI7+DXjpScTB80PgeFBgpghTZCMPa6wPKztSBo3BEIW6265hDRs1qFejQTTMBY595LiNjmXCtl1gRDw7ZR5mX5IjhtWCaEeToa4UWloDwap1FLnWSFE6itJbiouLM5ylhXAobkBLEwVp/o0ZNq6gwJvPh5FEXWlpHeRMTAZ6Qq59802CJAlKz0GFFN7N/09UcV2oSzBFXoXiSkpKspgtsQQbLpkjFWmo4xhZIUGek4Zm1Bn5wOjSZnQoFeReK5I4rABsmFFfUBA2ubGaiI1Ea2eGnR/iQ9k8xE3HGXQ4I4cTSWFOTp43Y0OefVLYdFYpPgmqJDMswpe5h4qAQ0WH4HhoviB5WMZHIXTZ80rCJa2i9C5wJT4KDx48WDa/i3lnMiSSpgB/bixpbPpzVgnQWBJoyDhkoGcAi2YsWiQdPwLBFglXPsWShLzp4NzInZu3blt+qbWDS1sdYeFT1WqWfhyktXxyYQbmI3OnYzEX+3zw3D8GTH/yyV2tzovOTZsuXhx9sXVr1Mbw6KqqCfrxRRfWL9jcobBrBWZxYhe/3gkKF+4a7Wy9tH5568WLzo+3MkJDuPRw6FEtyxdsbpmFFUZpOoga9ljXkMY6SaHT2Xpx+a6Lra2jP96qqeN5ggoLp6o2Xm754+ef4IaYqe9CfKxrWEpW6HZeurQA2AU25GIj9brwqKiQDqdfkEy4yHcpHt81svjsG7INR3+6fMGuSwuQDVVclIHI14fHRi+S/NWFRXcp1PuMN34hKdxUuMm5a/SmS61gQ8j9Y/VJfhaihhLQCePbkMRFPqtHdHqVWcqaoFEu3JnwF/CllyoqnB+7N3286eKnXyBnpOE0SeEhEZH6+Y0bb8+UGHXlSl1+qRzt86FNrj3XwQKZLVsBtG/B31LUUOMymtBHt/ijU6ceWmzhsA3NAraSGrImaHJkri/JwS7yg0ERxh1X8fjUnOl7ZhdNvVIqjfyreIKl9BmqDGQt4wKkbDm4VHQ0SmeGzx49NSHuxtP4eyLe/0vR1HmLJaQlNpAsgg2NeJ7/1dN7nkIPpDo9WR0WUREDLmfvfpsN7YP67EBR0VQJUBjJCQLDgRGNTyFO18zFx+gR0cCI9GCX+0EgSfXav/7gTxGf7ZkORpw3H/2AQpT4qziorvwSwH567r5j6AEakUQYg13sB0Ot03tffR9yxOMbSjCgUOeAkBFLgcI8u92eU3btTGNOTo798FKJxWER9rtBmormZ+WU5yHsPFIdGRuJ0iVW7poLKrzBVB5nVIVTyOhEa8+zywpJkmXVkGnBPY+qKx6Ag8RfEORUi4sNu53dCP6F9RI225bipA4YFXP9+vWx14frI/GkxtIBKYjwGg6XIEliL14EBr51S9f8BqTG0noxnV4DT5jD2NX8OISXQ/uBVJO7c7HILRN8yUF1dwmv13AcF7U0HuLFUcEb7ML2GjCjDZsRWP++dBTxXLiaj0SchJAY7742Knz6NXdirPF4PFeQJW0HXjuALYqG2VhK3jmUjhQKH27XU2GrkS9ZYq8eidj80mZ8TMJDcSSd09jY3n4Kamn8PqGJD1+FhO6j0bfiYtDFBmKi8cGFQiDH0uUo6P8N9dviZy8OtAklSLAEywaeZlEnuZC/HBGN3eaIEejiNZyGpZeg/s3f8IvRO/qjuL0l8DQL/6NTp0Yd3n4K2L548i+lHfskn5h59erVGx8evnbt2kt/382GWsynCJ3e4Dhutba1pdKBZIrl5d4o75LybzYaxGUnJI4cOXEibkR8/GEzY/4deKCQm4/i6zI0Ua6I107NevzxGbNSedJvjieWeDXed1Y7xIKhy3yIgyZ4GHo5U2y23BBzNFRkBscIKjQnUz3r8wsXLnyerPZ7sRm2jjMY6vRerxeNafDTxuFumqRwSigqJKXLd4h4wmkPjuO7/bYjvUYwMwxnZjR6tBXhA3Ec+ntghRNyvwgxhT62khR+9hRSmLvf3+AuFcvll2JQoiQuS+xSyOyaAO3QFkIKCTKzE9D32t8+kfjNZT+FpPRmL62Prd9QosVbSRJ5tJ8EK4TsKdQUmpbkyYz9MuL8DHA1MmN6PkdNObzlBfrY1SWPdS0NG/RKfDTypdAOc20htMdERIEak9P4h1OzfKH9OJvINeXl5Vn60sxpXaBxmmtmM0QL2+v9JyAgM29IXLG4XMO6U+pvXndm3CtQMXX5kAb/4osfdPE8JMAjRnzSb+UPSHLMnK92xgEfmu9Aw2n8jbekj4iDSMEmoVq5cOGT8INuC598fgCQcLnfBARk8sjTnudHxsfFzRN8YcxJkbEufzsQ6BGvoDEpNI4x4Ukfnkf73hN2hMrIt1pt+/uRD+ynbTtjZqLJ0WS1mkpGQ2kaTl/KMfn+zo2LkxVyBpJlSTpTS6J++yik8B+hM4Wx1/b8kpyS7TbbHFBITG6BahsHpYvUCLoohjPwfiwxs1Mh3s2uTUzEq2ouJww4+uKXoTPJlj5yvf2/lhwYGR8zShRF7Q64Q7c6jos0CC7GX5o3ucuGRkA0mZLRcVTCi6+WlfWbgICkx8wZuWczcjU3fFdCPcEwgmOii/N3rYH0DoXmdWhvLRqCgvv4OS9+9pqpvt8EBCQdMvWd8eiaXd0Uvou3zpg1/rY4J0fLvhQURkvpMNI5OyLiy/8OoSVSTS1vf4hJSfn666/LEHD8+p/5Ev5smJwi6kWxGMLomRiIgXCLuRGXcvSfT/xsYSjNdRvqN2SgpXjcPuTjkQfUgS9MGAV9Hew3/HgavuCb/OFr1jSmTUrLS0srH4t5B1/wM+CFNPqRyPoP8vHcbqdCo6ywrIzXR/q7eK6+tNRS6lj9Tlra8KfT0tJAXiMoxKYPpZkZMnPDRLwAYd0dCvljWoOG85ck8rGrM7yOp6+nDU8bPnZsh0J0Vdq6kFrFV9Au7Yk5nnCHDQkqKWq1vzO119/Jn7RmzfW0b8aCxA6FqJKGUCsEMtvrgYKCUXcqZNlvnvW7Ga+gfPhwaH7D0yYNhwdpG3CG6QWBBn8mVPf7pA05Du/4vasdimWmae1+c7yStOFIGlKHjk9P7MDfgmH+ZlPflv8+oDPQOpm7Pc2xMp7wNxjFl2OFWOTTk4anfeOQiey61ou+e+Rv4puaK4Iw8QY9bLDhmS6FACikA8xy1pdLTEJ+FKLFN9KFlWPrfHZgqFd22pPnCb652S24gqCQv17+6fJdyw+MbcxubC4uTlpMJycnJ2VkWPzOPZDH5s57G1hxtvns2bPNz5wdJi2Z4nwjhd5Z2KSW/LF3MVHndrmF5mAseqeX7FmwYMFT5eAzRkNnzUGwajJKGijsmR1Ti1Li8agF3iElyFW0tM73An2LK5zOW9iz8hsrvBaX2y24VwRjuH/angXLkcJJk0aDFRw6rZbkVCq/3W7jvENFKdDTnnMaTT2pGBfN40G3bm6Uj60odFY0IUl6wSW43U6nu+L2w9VyT1hi7Z5XD+zJ61CYfvxkOig0b+zJ60Oiu/1KESiMn/PG6m/RNijG0tgO5GR1801NFc7CQvetm9D0mrA+p9PlDNLWjOT3/+epToUnf/i/l/FeSkNPFUq3fR5WGL3z29RvL+KrgOLlChu6O1++ubDQWeiuvMkTBgHpgye3dEFaRky/ubx8UofC1m/T8TY9TQ8bRZPnoSuDIYVzTjs+nYBtWNLY2F7Q7VOUnm92IoWFlSIoLMQSwZK3gmNFknyzPE1WSOtFHkUQl4pLuquLCV1x7ZV5869ICuPnnJ6CLzgs4De79xCaKtyFhciKlU2EA1dYZETXimAttiEzIbaBQg4NsLFRaPsdyK0YYrrjT66dNxVvhcIKo5EvxRtP8zfq76x9fDNWWFhY0USsBnEIN9McxLU2dEn5aEYwO1iW15sFBu8HGnb+y/NzTaI8IsWL24veK+ogBQ2zXhNcgOAqvUeFFt1YlrPiOQiMhciIbsEZ3AGOOgvUTrRUXSNd6VpQuVBXB13jO6WlpSUl4Wqevb3dbpf2CW1Y1MmM1Hv5D2pFpVRNV96CQwMIdN80BTmz4h1YX1QU2gYcBXBo9HPAYddhLDPhQl6JmGm3453AXJfCNv6uwQD8nL+5EtVMSSbcnLgN8mRQrw2mj5SoM0hHJBBdbdCFh7Iv5LVrs+x26eonJUdOHFkEP230PcrLr2hqauL1lYUyzuZCpxvcqLj4FvRqQiFFbjpjRAcj6HoZp1cvI4VX7ehKRJINmbc2A79J58l7GqSpkquoqEDhAVsPqaxcoV+x0u0uvFV406sP8qg/r82sn4a/fwV0XcMKf4KseQb7FZe0TXaXLXf/ObLHFMtb4ZL6MbiOQvCHjnclREQUFN0VFYW3gzoUwIuJJUuWlOflTQJZKSrUw0lBCveZOy4qwWmEv54z+jMEe7PS5XJL1kN38BhF/UKs0H3rdtB31rK8NqvRPgl5mNmCWZiNJ81QJoG/8CLfoA+0UY2iFle4nXLAaJYrKjwEw4JPDZUVqJSYfhmiRMyAEQmYfUJG/kRD5H2OFjbdKqyUG2KHv3Hifk3lu0E3YHd0RpQUI9AuSoT6/vwEr73tdCMf2twhEN2cK6AL8ZCL3H/wKysrKlc03eqooqghVvb/YNRDRC2CPyZuN1VK3bbCd1eCOw21Ovr9EU3qStwcV2aK2tsm7b9QHcWoids08ZEbx42bobYms28Q61EPB9wqNMEVwS7MQwHH9tsmL0h0/mt5GRn+NgotLA92dDorPgrpetqbzjJLeDs9p9ZbWFkR2kbszdessM/5WE3ULg7KiPB9M/BemWAADHcY7SGFCtFkyhRZSBkC/37az2cG9mKY7GZ/hHc2a3CW1lTlIWjP0IDfOiXWDu6x398bhf0S3k2rkC5tNTzqUSHf+ac29a3CfuG7obj4fhVWr+qQmBVI4YNtRu+XMSdPVRY6iP4UZlV31KaACn1Tp4DlZ3v6g7D3Ht7pHVlVVVgY2aNC1uc+YC1N7bzkCUv6WyiNJ37ZMT18G5vO2ocNlK6uWlWDfx8ozPzOY0JS+CyPB+SasrR8jYfWZmWJhJrS1lR7vlsFCuksz3dZNHwoSyvWVGfJhZEUdpWZpK1+/+OBqT0rJPtSIcHXVFXVIuuZqmo9Js8qqLR0bY1oGmwixCpPde0qE+8BXWRWtlY0VVVpCTq7mhazPQSZWVVdnVUz1COF6U6FLKmjaYLV0VYdD4akeZLVsTxNUmqepkk1wdK0Ed4emMqTRqin8AmokzrSSGOb03Ag+1YhcqS4ppqqaiAqVlfxhCdbFJM90PggONCZRmh9IpGJvU3NUC0hrvJA8wXXJGaj9lkjV9xOhakDrfCPTLVaB6ayY+AxzcJLVnoMej2VIPEB7q0DjfBpIzwDPanym+jzY/pcITajiNshS9RUiXR2Lf5eEp6trcXNDymsrmYJ2dOIPCtWY4Ue9PcZbLpD4SyaZa00NCZolgPBKlY2dRaPCk+SRisLT+ElEn2ehE9jWW3oTXSCER/6ViFq8CT2qB0KaVFyr9AcuhTyVR6iQyGbWV1b66Mw6w6FVuiGwzPeSrDWVKh1Vn7MQIKCRoeqH1r1DVbDn4eXeCv6H6zkmDGo9aEqDKbuU4V0dS2qZKahWbIvxQo9dylkuxTynmwT6fGjcIz0DCu0DgQoVH52YCq0M2SmganIjpJCZE2kG/kcUEharanGvlVoGlxVgw+mToUiX1uL/gNR9KmlJGqfUrQwoT7C/SkkoA2iof0xqSySwyKFqQNZkvexIQUVx0rINkwFG7N9bMNsVO+Ss6GVddoQFFWLvClbJGprCVkhvOshWQgtWci1wJvZajj33u3QRyHUWDAatpAUGqy4aaKXIVoQUjsEd0R2KkRvsn3aDkUPePxsiIja6sHVYKDawTU0yFw1OFsLynCLNFUP9ohUzeBs+Gh2tVZbNXiVB/0R4BWIKB502r0VYpeJXCQ0QfChuJayRqsVv5ZqHcjDp2nJl8q1lLIixpDWvkwUSTFTiwIBZEYiTcId6vCL2kyeoNATkiTQwUgR8DmegDQL0i2RZbU0j99Gp4ldCtESNR6inFGnpnjaqEbxkKV4NPHJ4y2lBEtBxDPS6GugWPikGoInBQ6UR9e3Z0l4E86jQnJIcUyo5hZ9BUn43RysoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKDw/5z/A78onRg3p0WQAAAAAElFTkSuQmCC" width="50%;" style="margin-left:150px;">
+            </div>
+            &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+            <div class="col-md-2 ">
+                <div class="card" style="width: 100%">
+                    <ul class="list-group list-group-flush ">
+                        <a href="/accesbility/"><li class="list-group-item">Accessibility Notices</li></a>
+                         
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <div class="card" style="width: 100%">
+                    <ul class="list-group list-group-flush">
+                    <a href="/login/"><li class="list-group-item">Login</li></a>
+                   
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <div class="card" style="width:100%">
+                    <ul class="list-group list-group-flush">
+                        <a href="/information/"><li class="list-group-item">Information For</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <div class="card" style="width: 100%">
+                    <ul class="list-group list-group-flush ">
+                        <a href="/log/"><li class="list-group-item">Sign Up</li></a>
+                    </ul>
+                </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-3">
+                <h1 style="color:rgb(6, 6, 87);font-family:serif;font-style: calc();font-weight:bolder;font-size:80px;">
+                    SHERIDAN </h1>
+
+            </div>
+            <div class="col-md-6 mt-5">
+
+                <nav>
+                    <div class="nav navs">
+                        <a href="/home/" class="nav-link">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="/about/" class="nav-link">About</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="/courses/" class="nav-link">Courses</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="/camp/" class="nav-link">Campus
+                         <a href="/apply/" class="nav-link">ContactUs</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <i class="fa fa-search text mt-3 " aria-hidden="true"></i>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.sheridancollege.ca/-/media/project/sheridan/shared/images/home/hero/future-students.jpg?rev=6880b780dcd84dbfaef4c13b421b1c1a&w=1366&hash=F825B44F87BD4F7E499F9D081D983123"
+                                width="100%" height="600px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.sheridancollege.ca/-/media/project/sheridan/shared/images/home/hero/1-sheridan_degree_entrance_scholarship.jpg?rev=2bca25938ce44ab290e1c12a81c1358f&w=1366&hash=5C2B5F39A63B1C0F31F9D1B70F2933D7"
+                                width="100%" height="600px">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><hr><hr><br><br><br>
+
+        <div class="row">
+            <div class="col-md-6 about">
+
+                <img src="https://ieltsnpte.com/updates/wp-content/uploads/2021/02/Sheridan-College-Image.jpg"
+                    height="300px" width="100%">
+            </div>
+            <div class="col-md-6">
+                <h1 class="contact">About</h1>
+                <p>
+                    Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario's leading
+                    postsecondary institutions, educating approximately 27,060 full-time and 4,020 part-time students
+                    every
+                    year on three campuses in three Ontario cities — Oakville, Brampton and Mississauga.<br>
+
+                    An award-winning institution, Sheridan attracts students from across Canada and around the world.
+                    Sheridan's 215,000+ alumni play a critical role in shaping the future of our society in the fields
+                    of
+                    arts, business, community service, health, technology, and the skilled trades.<br>
+
+                    Sheridan is proud to have been named first on Forbes’ list of Canada’s Best Employers and ranked
+                    12th
+                    overall on Forbes’ list of Canada’s Best Employers for Diversity.<br>
+                </p>
+            </div>
+        </div>
+        <br><br><br>
+        <hr><hr>
+        <br><br><br>
+        <h2 class="bts " style="text-align: center;">
+            <i class="fa fa-users  ms-2 "></i>&nbsp&nbsp
+            Why Sheridan?
+        </h2><br>
+        <p class="p-3">Sheridan empowers you with practical skills and problem-solving knowhow, gets you collaborating
+            with a
+            diverse range of students and professors ― and delivers a unique learning environment that inspires.<br>
+
+            Purposeful programs that empower you
+            Our programs are purposeful in every way: outcomes, career-readiness, social responsibility, and life and
+            work skills. Enjoy a wide range of programs and degree offerings ― including certificates, diplomas and
+            advanced diplomas, and bachelor’s degrees. Flexible streams give you more choice to pursue your education,
+            your way.</p>
+        <div class="row p-3">
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <div data-aos="flip-down">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUFkkUT1t-dYS4b0QAg9WbDShiicWzAIdtA&usqp=CAU"
+                            height="300px" width="100%">
+                    </div>
+                    <h2 style="text-align:center">17,210+</h2>
+                    <h3 style="text-align:center">STUDENTS</h3>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <div data-aos="flip-down">
+                        <img src="https://www.crbgroup.com/wp-content/uploads/2019/05/1.-Dont-block-circulation-1-1680x1088.jpg"
+                            height="300px" width="100%">
+                    </div>
+                    <h2 style="text-align:center">228+</h2>
+                    <h3 style="text-align:center">CLASSROOMS & LABS</h3>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <div data-aos="flip-down">
+                        <img src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/how-to-change-disable-startup-programs-hero1550952647750.jpg"
+                            height="300px" width="100%">
+                    </div>
+                    <h2 style="text-align:center">140+</h2>
+                    <h3 style="text-align:center">PROGRAMS</h3>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr><hr>
+        <br><br><br>
+        <h2 class="bts "><i class="fa fa-bookmark ms-3" aria-hidden="true"></i>
+            &nbsp&nbsp
+            Courses &nbsp&nbsp<i class="fa fa-bookmark ms-3 me-3" aria-hidden="true"></i></h2><br><br>
+        <div class="row p-3">
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h3 class="contact"> Social,Culture Understanding</h3>
+                    <P>Sociology can help us figure out how these forces operate, and the effect they have on our lives.
+                        The quest to understand society is urgent and important.</P>
+                    <div data-aos="flip-up">
+                        <img src="https://aseanop.com/wp-content/uploads/2022/02/sheridancollegeinterior.jpeg"
+                            height="300px" width="100%">
+                    </div>
+                    <h4 class="abc offset-1"> Options:</h4>
+                    <ol>
+                        <form>
+                            <li>
+                                <lable> Introduction to anthropology:</lable>
+                            </li>
+                            <select>
+                                <option>Issues in social media</option>
+                                <option>Languages of the world </option>
+                                <option>Perspectives on world issues</option>
+                            </select>
+                            <li>
+                                <lable> Introduction to spanish culture:</lable>
+                            </li>
+                            <select>
+                                <option> Exploring our global village</option>
+                                <option> Multicultural voices</option>
+                                <option> Living and working in a diverse society</option>
+                            </select>
+                            <li>
+                                <lable>Philosophy of religion:</lable>
+                            </li>
+                            <select>
+                                <option> Psychology of human </option>
+                                <option> Stigma:Understanding prejudice</option>
+                                <option> Understanding cults</option>
+                            </select>
+                            <li>
+                                <lable> Introduction to sociology:</lable>
+                            </li>
+                            <select>
+                                <option> Social and behavioural sciences </option>
+                                <option> Material madness</option>
+                                <option> Historical general electives</option>
+                            </select>
+                        </form>
+                    </ol>
+
+
+
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="col-md-12">
+                    <h3 class="contact"> Arts and Society</h3>
+                    <p>Art and Society concentration is designed for students interested in visual and performing
+                        arts and the role of cultural production in society. </p>
+                    <div data-aos="flip-up">
+                        <img src="https://www.collegebatch.com/study-abroad/static/abroad-clg-gallery/sheridan-college-3447.jpg"
+                            height="300px" width="100%">
+                    </div>
+                    <h4 class="abc offset-1"> Options:</h4>
+                    <ol>
+                        <form>
+                            <li>
+                                <lable> Art of the cinema:</lable>
+                            </li>
+                            <select>
+                                <option> Crime fiction narratives</option>
+                                <option> Diverse gender identities</option>
+                                <option> Documentary film</option>
+                            </select>
+                            <li>
+                                <lable>The graphic novel: </lable>
+                            </li>
+                            <select>
+                                <option>Memoir : life in story </option>
+                                <option> World war narratives</option>
+                                <option>Villian in literature and film</option>
+                            </select>
+                            <li>
+                                <lable>The liteature and popular culture:</lable>
+                            </li>
+                            <select>
+                                <option> Classical mythology </option>
+                                <option> Sports in popular culture</option>
+                                <option> Identities around the world</option>
+                            </select>
+                            <li>
+                                <lable>Introduction to international cinema: </lable>
+                            </li>
+                            <select>
+                                <option> Detective fictions in film </option>
+                                <option> Detective fictions in literature</option>
+                                <option> The undead in literature</option>
+                            </select>
+                        </form>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h3 class="contact"> Science and Technology</h3>
+                    <p>Science and technology cover a breadth of disciplines, including biotechnology, life and physical
+                        science,and information technology.</p>
+                    <div data-aos="flip-up">
+                        <img src="https://www.collegebatch.com/study-abroad/static/abroad-clg-gallery/sheridan-college-3448.jpg"
+                            height="300px" width="100%">
+                    </div>
+                    <h4 class="abc offset-1"> Options:</h4>
+                    <ol>
+                        <form>
+                            <li>
+                                <lable>Crimes of deception in the information age:</lable>
+                            </li>
+                            <select>
+                                <option> Scams theft</option>
+                                <option> Fauds theft</option>
+                                <option> Identity theft</option>
+                            </select>
+                            <li>
+                                <lable>Society and technology:</lable>
+                            </li>
+                            <select>
+                                <option>Challenge and change</option>
+                                <option> Core concepts</option>
+                                <option>Creative thinking</option>
+                            </select>
+                            <li>
+                                <lable>History of science and technology:</lable>
+                            </li>
+                            <select>
+                                <option>Theory and practice </option>
+                                <option>Global migration bustling </option>
+                                <option> Navigating work post</option>
+                            </select>
+                            <li>
+                                <lable>Innovation: </lable>
+                            </li>
+                            <select>
+                                <option> Shaping the modern world </option>
+                                <option>Construction and geometry</option>
+                                <option> science of trigonometry </option>
+                            </select>
+                        </form>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <br><br>
+<hr><hr>
+       <br>
+
+        <div class="row mt-5 p-3">
+            <div class="col-md-6">
+                 <h1 class="contact" style="text-align: center;"><i class="fa fa-address-book" aria-hidden="true"></i><i class="fa fa-book" aria-hidden="true"></i>&nbsp&nbsp Apply Now</h1><br><br>
+                 <form action="{% url 'apply1'  %}" method='POST'>
+                    {% csrf_token %}
+                    <lable>Enter Name</lable>
+                    <input type="text" required class="form-control"><br>
+                    <lable>Enter Father Name</lable>
+                    <input type="text" required class="form-control"><br>
+                    <lable>Enter E-mail</lable>
+                    <input type="email" required class="form-control"><br>
+                    <lable>Enter Mobile Number</lable>
+                    <input type="text" required class="form-control"><br>
+                    <lable> Gender</lable>
+                    <input type="radio">Male
+                    <input type="radio">Female<br><br>
+                    <lable> Qualification</lable>
+                    <select>
+                        <option>12th pass</option>
+                        <option>Under-graduate</option>
+                        <option>Post-graduate</option>
+                        <option>Graduate</option>
+                    </select><br><br>
+                    <lable> I argree with all the policies of Sheridan</lable>
+                    <input type="checkbox" required><br><br>
+                    <lable>Feedback</lable>
+                    <textarea class="form-control"></textarea><br>
+                    <button class="btn btn-danger">Submit</button>
+                    <button class="btn btn-danger">Reset</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h1 class="contact" style="text-align:center"><i class="fa fa-globe"
+                        aria-hidden="true"></i>&nbsp&nbspCampus Location</h1><br><br>
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6243785429897!2d-79.7413100232774!3d43.655982752250004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3fbfe8f0ad5b%3A0xcd97e708c1197e9e!2sSheridan%20College%20-%20Davis%20Campus!5e0!3m2!1sen!2sin!4v1691563650593!5m2!1sen!2sin"
+                    width="100%" height="610px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div><br>
+        <hr>
+        <hr><br>
+        <ul type="circle">
+            <li>
+                <h4>Maps & Directions;</h4>
+            </li>
+            <h4>7899 McLaughin Road,Brampton,Ontario</h4>
+            <li>
+                <h4>For further information; </h4>
+            </li>
+            <h4>Contact:+1 905-459-7533 </h4>
+        </ul>
+        <div class="row bg-dark text-light text-center mt-5 p-3">
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <h2>SHERIDAN</h2>
+                    <p>Through a combination of lectures, readings, discussions, students will gain solid foundation in
+                        educational.</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <a href="https://www.instagram.com/"  class="nav-link hash "><i class="bi bi-instagram" style="font-size:50px;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <a href="https://www.facebook.com/login/" class="nav-link hash "> <i
+                                        class="fa fa-facebook-square square" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <a href="https://youtu.be/c4PMYlxT0lY?si=czcI63K_pCxfNmkn"  class="nav-link hash "><i class="bi bi-youtube" style="font-size:50px;"></i>
+                                </a>                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="nav-link hash " ><i class="bi bi-envelope-arrow-up" style="font-size:50px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="col-md-12 foot">
+
+                    <h2>Useful Links</h2>
+                    <li>About Sheridan</li>
+                    <li>Contact</li>
+                    <li>Help Center</li>
+                    <li>Refund</li>
+                    <li>Conditions</li>
+                    <li>Privacy Policy</li>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="col-md-12 rover">
+                    <h2>Categories</h2>
+                    <li>Design Skills</li>
+                    <li>Development</li>
+                    <li>Marketing</li>
+                    <li>Finance & Accounting</li>
+                    <li>IT & Software</li>
+                    <li>Sales Marketing</li>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <h2>Newsletter</h2>
+                    <p>Sign up for our newsletter and get 34%
+                        off your next course.</p>
+                        <form action="{% url 'apply2' %}" method='POST'>
+                            {% csrf_token %}
+                        <input type="email" class="form-control" placeholder="Enter Your Email*" required><br>
+                        <button style="text-align:center ;" class="btn btn-danger">Subscribe</button>
+                        <br>
+
+                        <input type="checkbox"> I agree to the terms and policies
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p>Copyright@August2023 All rights reserved by HKB</p>
+        </div>
+
+
+    </div>
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
